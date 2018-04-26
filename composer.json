@@ -1,0 +1,18 @@
+{
+  "name": "Raychars/Upload",
+  "description": "分片上传大文件",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "qiandutianxia",
+      "email": "852997402@qq.com"
+    }
+  ],
+  "minimum-stability": "1.0.0",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Raychars\\Upload": "src/"
+    }
+  }
+}
