@@ -8,11 +8,16 @@
       "email": "852997402@qq.com"
     }
   ],
-  "minimum-stability": "1.0.0",
   "require": {},
   "autoload": {
+    "files": [
+      "Raycharles/Helper/functions.php"
+    ],
     "psr-4": {
-      "Raychars\\Upload": "src/"
+      "Raychars\\Upload\\": "Raycharles/Upload/src/",
+      "Raychars\\Console\\": "Raycharles/Console/src/",
+      "Raychars\\Cli\\": "Raycharles/Cli/",
+      "Raychars\\Framework\\": "Raycharles/Framework/"
     }
   }
 }
