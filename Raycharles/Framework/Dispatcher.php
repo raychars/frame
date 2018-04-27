@@ -15,7 +15,7 @@ class Dispatcher {
      * @return void
      */
     static public function dispatch() {
-        p($_SERVER['QUERY_STRING']);
+//        p($_SERVER['QUERY_STRING']);
 
     }
 

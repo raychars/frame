@@ -6,6 +6,6 @@
  * Time: 14:35
  */
 
-
+Route::get('/','IndexController@index');
 
 

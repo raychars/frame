@@ -8,6 +8,8 @@
 
 namespace Raychars\Framework;
 
+use App\Controller\IndexController;
+
 class Application
 {
     public $alias;//类别名
@@ -15,14 +17,14 @@ class Application
     public function __construct()
     {
         //定义一些常量
-        new Bootstrap($_SERVER['DOCUMENT_ROOT']);
+        new Bootstrap();
 
         Dispatcher::dispatch();
 
         $this->alias = $this->alias();
         $this->parseAlias();
-
         $this->loadRoute();
+        $this->response();
     }
 
     public function alias()
@@ -50,5 +52,11 @@ class Application
             return isset($list['alias']) ? $list['alias'] : '';
         }
         return array();
+    }
+
+    public function response(){
+        $path=isset($_SERVER['REDIRECT_URL'])?$_SERVER['REDIRECT_URL']:'/';
+        
+        Route::parseUrl($path);
     }
 }

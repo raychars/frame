@@ -8,6 +8,9 @@
 header("Content-type:text/html;charset=utf-8");
 require '../vendor/autoload.php';
 
+define('ROOT_PATH',realpath(__DIR__.'/../'));
+define('BASE_PATH',getcwd());
+
 try{
     $app=new \Raychars\Framework\Application();
 }catch(\Raychars\Exception\ErrorException $e){

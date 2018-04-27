@@ -8,4 +8,4 @@
 
 Route::get('/','IndexController@index');
 
-
+Route::get('/post','IndexController@post');
