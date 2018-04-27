@@ -40,10 +40,10 @@ class Output
                 throw new Exception($obj->getMessage());
             }
 
-            echo $obj->getLog();
+            echo $this->transCode($obj->getLog());
 
         } catch (Exception $e) {
-            echo $e->getMessage();
+            echo $this->transCode($e->getMessage());
         }
     }
 

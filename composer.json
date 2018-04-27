@@ -17,7 +17,12 @@
       "Raychars\\Upload\\": "Raycharles/Upload/src/",
       "Raychars\\Console\\": "Raycharles/Console/src/",
       "Raychars\\Cli\\": "Raycharles/Cli/",
-      "Raychars\\Framework\\": "Raycharles/Framework/"
+      "Raychars\\Framework\\": "Raycharles/Framework/",
+      "Raychars\\Exception\\": "Raycharles/Exception/",
+      "App\\": "app/",
+      "App\\Controller\\": "app/controller/",
+      "App\\Model\\": "app/model/",
+      "App\\View\\": "app/view/"
     }
   }
 }
