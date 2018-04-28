@@ -69,3 +69,27 @@ if(!function_exists('get_client_ip')){
         return $ip[$type];
     }
 }
+
+/**
+ * 获取请求方法
+ */
+if(!function_exists('method')){
+    function method(){
+        return strtolower($_SERVER['REQUEST_METHOD']);
+    }
+}
+
+if(!function_exists('get')){
+    function get($key='',$callable='trim'){
+
+    }
+}
+
+if(!function_exists('input')){
+    function input($key='',$callable='trim'){
+
+    }
+}
+
+
+

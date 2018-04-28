@@ -9,3 +9,4 @@
 Route::get('/','IndexController@index');
 
 Route::get('/post','IndexController@post');
+Route::post('/post','TestController@test');
