@@ -71,16 +71,10 @@ class Route
             $class_name = ucfirst($map[0]) . '\\Controller\\' . $map[1];
         }
 
-        $reflect = new \ReflectionClass($class_name);
-        $dependencies = (new self())->parseDependenciesByClass($class_name);
-//        p($dependencies);
-
-        $obj = $reflect->newInstanceArgs($dependencies);
-
         if(method() == 'get'){
-            call_user_func_array(array($obj, $map[2]), self::$agvs[$url]);
+            return [$class_name,$map[2],self::$agvs];
         }elseif(method() == 'post'){
-            call_user_func_array(array($obj, $map[2]), self::$post_agvs[$url]);
+            return [$class_name,$map[2],self::$post_agvs[$url]];
         }else{
             throw new UrlErrorException('路由未找到对应方法');
         }

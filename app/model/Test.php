@@ -8,7 +8,8 @@
 namespace App\Model;
 
 class Test{
-    public function say(){
-        echo "hello world";
+    public function say(Product $product){
+        echo "test model<br/>";
+        $product->index();
     }
 }

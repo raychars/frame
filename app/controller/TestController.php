@@ -11,10 +11,10 @@ use App\Model\Product;
 
 class TestController{
 
-    public function __construct(Product $test)
-    {
-
-    }
+//    public function __construct(Product $test)
+//    {
+//
+//    }
 
 
     public function test(){

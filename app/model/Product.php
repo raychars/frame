@@ -10,7 +10,12 @@ namespace App\Model;
 class Product{
     public function __construct(Test $test)
     {
-        echo "product model";
+        echo "product model<br/>";
+        p($test);
         $test->say();
+    }
+
+    public function index(){
+        echo "product index function<br/>";
     }
 }

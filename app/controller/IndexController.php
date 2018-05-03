@@ -8,22 +8,22 @@
 
 namespace App\Controller;
 
+
 use App\Model\Product;
 use App\Model\Test;
-
 
 class IndexController
 {
 
-//    public function __construct(Test $test, Product $product)
-//    {
-//        p($test->say());
-//    }
-
-
-    public function index()
+    public function __construct(Test $test, Product $product)
     {
-        p($_GET);
+        p($test->say());
+    }
+
+
+    public function index(TestController $test)
+    {
+//        p($test->test());
     }
 
     public function post()

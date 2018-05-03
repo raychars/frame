@@ -13,6 +13,7 @@ define('BASE_PATH',getcwd());
 
 try{
     $app=new \Raychars\Framework\Application();
+    p($app);
 }catch(\Raychars\Exception\ErrorException $e){
     echo $e->getError();
 }
